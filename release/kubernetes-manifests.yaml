@@ -76,7 +76,7 @@ kind: Service
 metadata:
   name: emailservice
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: emailservice
   ports:
@@ -149,7 +149,7 @@ kind: Service
 metadata:
   name: checkoutservice
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: checkoutservice
   ports:
@@ -217,7 +217,7 @@ kind: Service
 metadata:
   name: recommendationservice
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: recommendationservice
   ports:
@@ -314,7 +314,7 @@ kind: Service
 metadata:
   name: frontend
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: frontend
   ports:
@@ -391,7 +391,7 @@ kind: Service
 metadata:
   name: paymentservice
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: paymentservice
   ports:
@@ -455,7 +455,7 @@ kind: Service
 metadata:
   name: productcatalogservice
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: productcatalogservice
   ports:
@@ -520,7 +520,7 @@ kind: Service
 metadata:
   name: cartservice
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: cartservice
   ports:
@@ -655,7 +655,7 @@ kind: Service
 metadata:
   name: currencyservice
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: currencyservice
   ports:
@@ -719,7 +719,7 @@ kind: Service
 metadata:
   name: shippingservice
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: shippingservice
   ports:
@@ -784,7 +784,7 @@ kind: Service
 metadata:
   name: redis-cart
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: redis-cart
   ports:
@@ -850,7 +850,7 @@ kind: Service
 metadata:
   name: adservice
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: adservice
   ports:
